@@ -1,6 +1,82 @@
 SuperTux Release and Development Notes
 ======================================
 
+SuperTux 0.5.0 (2016-09-25)
+---------------------------
+
+The SuperTux team is excited to announce the availability of the stable release 0.5.0 after less than a year of development. The most prominent change for this release is a new in-game level editor which allows you to create levels and worldmaps on-the-fly from within SuperTux itself.
+
+Changes:
+
+* In-game level editor
+* Improved levels in Antarctica and Forest Island
+* Language packs are fixed
+* Engine performance improvements
+* Extended the scripting API: gradients are now scriptable
+* Added a few more tiles and music
+* New console commands and command line options (related to the editor)
+* Various other bugfixes of issues reported since the v0.4.0 release
+* And more (minor) improvements and changes
+
+Changes from 0.5.0-rc.1 (2016-08-05):
+
+* Fixed build system in order to correctly support SemVer pre-release tags
+* Fixed miniswig compilation
+* Editor: correctly join paths (using FileSystem::join())
+* Editor: LevelDot: add a NULL check to prevent a crash when editing worldmaps
+* Editor: correctly save BadGuy and Dispenser direction
+* Editor: reorder layer objects when their object menu is closed
+* Editor: allow setting z-pos of decals
+* Editor: display a notile when the tile ID is invalid
+* Editor: make it possible to switch tilesets
+
+Changes from 0.5.0-rc.2 (2016-08-10):
+
+* Editor: Torch: make it possible to change the sprite (#541)
+* Don't turn Tux into stone above ground when using earth bonus (#537)
+* WillOWisp: get name property in order to fix a scripting issue (#529)
+* Editor: don't play WillOWisp sound
+* Editor: move moving objects to the center of the mouse pointer when adding
+* Editor: Switch: make sprite option visible again
+* Make use of auto pointers and modern iterators where appropriate
+* README: various updates related to download count
+* Save and load visibility of SpriteChange tiles in squirrel table (#342)
+* Editor: Fix an issue where the name of a scripted object wouldn't be saved (#557)
+* Editor: add an alignment option for background (#547)
+* Editor: Better approach for layer removal (#510)
+* Add a launcher script for Windows builds (#443)
+
+Changes from 0.5.0-rc.3 (2016-08-26):
+
+* Fixes for the build system and updates with regard to the automatic deployment
+  of releases
+* More code style fixes
+* Editor: verify some level properties have been set
+* Add the possibility to add sawblade/hurting platforms using the editor
+* Jump with Up: mark as deprecated in KeyboardMenu and JoystickMenu (addresses
+  #499)
+* Fix an issue with odd behavior of music playback (#583)
+* Update some parts of the (user) documentation
+* Editor: multiple fixes to levelset and worldmap creation, including UX
+  improvements
+* Editor: Angle option for spotlight
+* Unify string spelling for consistency
+* String freeze for translators is now in effect
+* Editor: sort layer in ascending order
+* Scripting: deduplicate code using the ExposedObject template class
+* Update the translations to reflect the translation progress as of 2016-09-12
+
+Changes from 0.5.0-rc.4 (2016-09-12):
+
+* Use PhysFS file system abstraction for is\_directory checks
+* Prevent statistics text from overlapping
+* Fix a bug with Level.edit() in squirrel (#207)
+
+Changes from 0.5.0-rc.5 (2016-09-23):
+
+* Stop looping sounds when dead
+* Final translation update
+
 SuperTux 0.4.0 (2015-12-20)
 ----------------------------
 
